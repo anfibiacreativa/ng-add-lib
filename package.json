@@ -1,8 +1,8 @@
 {
-  "name": "ng-add-lib",
+  "name": "@anfibiacreativa/learn-add-schematics",
   "version": "0.0.1",
   "description": "Librería de prueba para aprender a publicar y agregar schematics",
-  "schematics": "./schematics/collection.json",
+  "schematics": "./schematics/src/collection.json",
   "ngPackage": {
     "dest": "dist/lib",
     "lib": {
