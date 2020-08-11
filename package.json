@@ -1,6 +1,6 @@
 {
   "name": "@anfibiacreativa/learn-add-schematics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Librería de prueba para aprender a publicar y agregar schematics",
   "schematics": "./schematics/src/collection.json",
   "ngPackage": {
