@@ -4,7 +4,7 @@
     "ng-add": {
       "description": "Instala nuestra libreria.",
       "factory": "./ng-add/index#ngAdd",
-      "aliases": ["add"]
+      "aliases": ["init"]
     },
     "actualizar-config": {
       "description": "A blank schematic.",
