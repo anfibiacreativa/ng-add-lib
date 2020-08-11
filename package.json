@@ -14,7 +14,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "build:lib": "ng-packagr -p package.json && npm run build:schematics && npm run copy:schematics",
-    "build:schematics": "cd schematics && npm install &&  npm run build",
+    "build:schematics": "cd schematics && npm run build",
     "copy:schematics": "cpr schematics/src dist/lib/schematics --deleteFirst",
     "test": "ng test",
     "lint": "ng lint",

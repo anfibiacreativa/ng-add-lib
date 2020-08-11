@@ -16,11 +16,13 @@ export function actualizarConfig(_options: any): Rule {
       const folder = _options.folder;
       const styles =  [`./${dir}/${folder}/styles/styles.scss`]; 
       const angularConfigPath = './angular.json';
+      let angularConfigBuffer;
 
       _context.logger.info(Object.keys(workspace.projects)[0] + ' workspace');
 
       if (tree.exists(angularConfigPath)) {
-      const angularConfigBuffer = tree.read(angularConfigPath);
+        angularConfigBuffer = tree.read(angularConfigPath);
+      }
 
       if (!angularConfigBuffer) {
         return;
@@ -60,7 +62,6 @@ export function actualizarConfig(_options: any): Rule {
       }
       // overwrite the angular configuration including the path to our new scss structure
       tree.overwrite(angularConfigPath, JSON.stringify(updatedAngularConfig, null, 2));
-      };
       return tree;
     }
   ]);
