@@ -1,0 +1,22 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Instala nuestra libreria.",
+      "factory": "./ng-add/index#ngAdd",
+      "aliases": ["add"]
+    },
+    "actualizar-config": {
+      "description": "A blank schematic.",
+      "schema": "./actualizar-config/schema.json",
+      "factory": "./actualizar-config/index#actualizarConfig",
+      "aliases": ["reconfig"]
+    },
+    "agregar-alias": {
+      "description": "A blank schematic.",
+      "schema": "./agregar-alias/schema.json",
+      "factory": "./agregar-alias/index#agregarAlias",
+      "aliases": ["alias"]
+    }
+  }
+}

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-add-lib"
+    }
+  },
+  "defaultProject": "ng-add-lib",
+  "cli": {
+    "analytics": false
+  }
 }
